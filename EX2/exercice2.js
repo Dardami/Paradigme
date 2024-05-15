@@ -2,9 +2,9 @@
 maskify('1') -> '1'
 maskify('11111') -> '#1111'*/
 
-function maskify(str) {
-	const derNum = str.slice(-4);
-	const numCache = "#".repeat(str.length);
+function maskify(num) {
+	const derNum = num.slice(-4);
+	const numCache = "#".repeat(num.length);
 	
 	return numCache + derNum;
 	
